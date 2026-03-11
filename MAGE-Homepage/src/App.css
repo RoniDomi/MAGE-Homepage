@@ -3,24 +3,77 @@
   --fontglow: rgba(255, 251, 219, 0.3)
 }
 
-/* Page Title */ 
-.main-header h1 {
-  /* Cosmetics */ 
-  color: var(--fontcolor);
-  font-size: 12em;
-  align-content: center;
-  font-family: michroma;
-
-  /* Position */ 
+.main-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   min-height: 50vh;
+}
+
+/* Page Title */ 
+.main-header h1 {
+  color: var(--fontcolor);
+  font-size: 12em;
+  align-content: center;
+  font-family: michroma;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 200px;
 
   /* Glow */ 
   text-shadow: 0 0 10px var(--fontcolor), 0 0 20px var(--fontcolor), 0 0 40px var(--fontcolor); 
   animation: glow-pulse 10s ease-in-out infinite; 
+}
+
+.main-header p {
+  color: var(--fontcolor);
+  font-family: "Georgia", serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+/* Navbar */ 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.mage-icon img {
+  width: 40px;
+  height: auto;
+}
+
+.list ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.list ul li a {
+  color: var(--fontcolor);
+  font-family: Helvetica;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.login-btn a {
+  font-family: Helvetica;
+  text-decoration: none;
+  color: var(--fontcolor);
 }
 
 /* No select */ 
